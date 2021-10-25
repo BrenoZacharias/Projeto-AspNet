@@ -1,34 +1,35 @@
 ﻿@{
     ViewData["Title"] = "Realizar Venda";
 }
-<h2>@ViewData["Title"]</h2>
 
-<body>
+<div class="text-center">
+    <h2>@ViewData["Title"]</h2>
 
-    <div class="form-group col-md-4">
-        <label for="inputCliente">Cliente</label>
-        <select id="inputCliente" class="form-control">
-            <option selected>Selecionar...</option>
-            <option>...</option>
-        </select>
+    <div class="row">
+        <div class="form-group col-md-4">
+            <label for="inputCliente">Cliente</label>
+            <select id="inputCliente" class="form-control">
+                <option selected>Selecionar...</option>
+                <option>...</option>
+            </select>
+        </div>
+
+        <div class="form-group col-md-4">
+            <label for="inputModelo">Modelo</label>
+            <select id="inputModelo" class="form-control">
+                <option selected>Selecionar...</option>
+                <option>...</option>
+            </select>
+        </div>
+
+        <div class="form-group col-md-4">
+            <label for="inputQuant">Quantidade</label>
+            <select id="inputQuant" class="form-control">
+                <option selected>Selecionar...</option>
+                <option>...</option>
+            </select>
+        </div>
     </div>
-
-    <div class="form-group col-md-4">
-        <label for="inputModelo">Modelo</label>
-        <select id="inputModelo" class="form-control">
-            <option selected>Selecionar...</option>
-            <option>...</option>
-        </select>
-    </div>
-
-    <div class="form-group col-md-4">
-        <label for="inputQuant">Quantidade</label>
-        <select id="inputQuant" class="form-control">
-            <option selected>Selecionar...</option>
-            <option>...</option>
-        </select>
-    </div>
-
     <button type="button" class="btn btn-primary">Vender</button>
-
-</body>
+</div>
+    

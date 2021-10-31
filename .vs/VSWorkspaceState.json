@@ -4,13 +4,7 @@
     "\\Controllers",
     "\\Models",
     "\\Properties",
-    "\\Views",
-    "\\Views\\Fornecedor",
-    "\\Views\\Home",
-    "\\Views\\Login",
-    "\\Views\\Menu",
-    "\\Views\\Venda"
+    "\\Views"
   ],
-  "SelectedNode": "\\Startup.cs",
   "PreviewInSolutionExplorer": false
 }

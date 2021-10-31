@@ -25,7 +25,7 @@ namespace Projeto_Loja_Sapatos
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            string sqlConnection = Configuration.GetConnectionString("Jean");
+            string sqlConnection = Configuration.GetConnectionString("Gabi");
 
             services.AddDbContextPool<AppDbContext>(options => options.UseSqlServer(sqlConnection));
 

@@ -99,5 +99,8 @@ namespace Projeto_Loja_Sapatos.Data
                 .Property(p => p.dtVenda)
                 .IsRequired();
         }
+
+
+        public DbSet<Projeto_Loja_Sapatos.Models.ModeloViewModel> ModeloViewModel { get; set; }
     }
 }

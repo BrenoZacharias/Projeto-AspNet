@@ -27,6 +27,38 @@ namespace Projeto_Loja_Sapatos.Controllers
         {
             return View();
         }
+          public IActionResult CadastrarFornecedor()
+        {
+            return View();
+        }
+        public IActionResult ListarFornecedor()
+        {
+            return View();
+        }
+         public IActionResult Cadastro()
+        {
+            return View();
+        }
+        public IActionResult Menu()
+        {
+            return View();
+        }
+        public IActionResult CadastrarModelo()
+        {
+            return View();
+        }
+        public IActionResult ListarModelos()
+        {
+            return View();
+        }
+        public IActionResult CadastroVenda()
+        {
+            return View();
+        }
+        public IActionResult ListarVendas()
+        {
+            return View();
+        }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()

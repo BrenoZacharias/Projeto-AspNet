@@ -1,8 +1,16 @@
 {
   "ExpandedNodes": [
     "",
+    "\\Controllers",
+    "\\Models",
+    "\\Properties",
     "\\Views",
-    "\\Views\\Shared"
+    "\\Views\\Fornecedor",
+    "\\Views\\Home",
+    "\\Views\\Login",
+    "\\Views\\Menu",
+    "\\Views\\Venda"
   ],
+  "SelectedNode": "\\Startup.cs",
   "PreviewInSolutionExplorer": false
 }

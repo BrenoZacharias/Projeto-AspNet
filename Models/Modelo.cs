@@ -10,8 +10,12 @@ namespace Projeto_Loja_Sapatos.Models
     {
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int id { get; set; }
-        public int id_fornecedor { get; set; }
-        public int id_categoria { get; set; }
+        [ForeignKey("Fornecedor")]
+        public int id_fornecedor { get; set;}
+        public virtual Fornecedor Fornecedor { get; set; }
+        [ForeignKey("Categoria")]
+        public int id_categoria { get; set;}
+        public virtual Categoria Categoria { get; set; }
         public string codigoRef { get; set; }
         public string cor { get; set; }
         public int tamanho { get; set; }

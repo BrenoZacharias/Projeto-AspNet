@@ -10,8 +10,12 @@ namespace Projeto_Loja_Sapatos.Models
     {
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int id { get; set; }
-        public int id_modelo { get; set; }
-        public int id_cliente  { get; set; }
+        [ForeignKey("Modelo")]
+        public int id_modelo { get; set;}
+        public virtual Modelo Modelo { get; set; }
+        [ForeignKey("Cliente")]
+        public int id_cliente { get; set;}
+        public virtual Cliente Cliente { get; set; }
         public int quantidade { get; set; }
         public DateTime dtVenda { get; set; }
     }

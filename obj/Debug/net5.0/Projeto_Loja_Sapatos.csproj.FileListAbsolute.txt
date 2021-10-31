@@ -130,9 +130,7 @@ D:\Gaveta\Curso SINQIA .NET\Projeto-AspNet\obj\Debug\net5.0\scopedcss\bundle\Pro
 D:\Gaveta\Curso SINQIA .NET\Projeto-AspNet\obj\Debug\net5.0\Projeto_Loja_Sapatos.TagHelpers.input.cache
 D:\Gaveta\Curso SINQIA .NET\Projeto-AspNet\obj\Debug\net5.0\Projeto_Loja_Sapatos.TagHelpers.output.cache
 D:\Gaveta\Curso SINQIA .NET\Projeto-AspNet\obj\Debug\net5.0\Projeto_Loja_Sapatos.RazorCoreGenerate.cache
-D:\Gaveta\Curso SINQIA .NET\Projeto-AspNet\obj\Debug\net5.0\Razor\Views\Home\Cadastro.cshtml.g.cs
 D:\Gaveta\Curso SINQIA .NET\Projeto-AspNet\obj\Debug\net5.0\Razor\Views\Home\Index.cshtml.g.cs
-D:\Gaveta\Curso SINQIA .NET\Projeto-AspNet\obj\Debug\net5.0\Razor\Views\Home\Menu.cshtml.g.cs
 D:\Gaveta\Curso SINQIA .NET\Projeto-AspNet\obj\Debug\net5.0\Razor\Views\Home\Privacy.cshtml.g.cs
 D:\Gaveta\Curso SINQIA .NET\Projeto-AspNet\obj\Debug\net5.0\Razor\Views\Shared\Error.cshtml.g.cs
 D:\Gaveta\Curso SINQIA .NET\Projeto-AspNet\obj\Debug\net5.0\Razor\Views\Shared\_Layout.cshtml.g.cs
@@ -144,12 +142,6 @@ D:\Gaveta\Curso SINQIA .NET\Projeto-AspNet\obj\Debug\net5.0\Projeto_Loja_Sapatos
 D:\Gaveta\Curso SINQIA .NET\Projeto-AspNet\obj\Debug\net5.0\Projeto_Loja_Sapatos.Views.pdb
 D:\Gaveta\Curso SINQIA .NET\Projeto-AspNet\obj\Debug\net5.0\Projeto_Loja_Sapatos.csproj.CopyComplete
 D:\Gaveta\Curso SINQIA .NET\Projeto-AspNet\obj\Debug\net5.0\Projeto_Loja_Sapatos.genruntimeconfig.cache
-D:\Gaveta\Curso SINQIA .NET\Projeto-AspNet\obj\Debug\net5.0\Razor\Views\Home\CadastroVenda.cshtml.g.cs
-D:\Gaveta\Curso SINQIA .NET\Projeto-AspNet\obj\Debug\net5.0\Razor\Views\Home\CadastrarFornecedor.cshtml.g.cs
-D:\Gaveta\Curso SINQIA .NET\Projeto-AspNet\obj\Debug\net5.0\Razor\Views\Home\ListarFornecedor.cshtml.g.cs
-D:\Gaveta\Curso SINQIA .NET\Projeto-AspNet\obj\Debug\net5.0\Razor\Views\Home\ListarVendas.cshtml.g.cs
-D:\Gaveta\Curso SINQIA .NET\Projeto-AspNet\obj\Debug\net5.0\Razor\Views\Home\ListarModelos.cshtml.g.cs
-D:\Gaveta\Curso SINQIA .NET\Projeto-AspNet\obj\Debug\net5.0\Razor\Views\Home\CadastrarModelo.cshtml.g.cs
 C:\Users\breno.zacharias\Projeto-AspNet\bin\Debug\net5.0\appsettings.Development.json
 C:\Users\breno.zacharias\Projeto-AspNet\bin\Debug\net5.0\appsettings.json
 C:\Users\breno.zacharias\Projeto-AspNet\bin\Debug\net5.0\Projeto_Loja_Sapatos.exe
@@ -310,3 +302,11 @@ C:\Users\breno.zacharias\Desktop\Primeiro modo\Projeto-AspNet\obj\Debug\net5.0\P
 C:\Users\breno.zacharias\Desktop\Primeiro modo\Projeto-AspNet\obj\Debug\net5.0\ref\Projeto_Loja_Sapatos.dll
 C:\Users\breno.zacharias\Desktop\Primeiro modo\Projeto-AspNet\obj\Debug\net5.0\Projeto_Loja_Sapatos.pdb
 C:\Users\breno.zacharias\Desktop\Primeiro modo\Projeto-AspNet\obj\Debug\net5.0\Projeto_Loja_Sapatos.genruntimeconfig.cache
+D:\Gaveta\Curso SINQIA .NET\Projeto-AspNet\obj\Debug\net5.0\Razor\Views\Fornecedor\CadastrarFornecedor.cshtml.g.cs
+D:\Gaveta\Curso SINQIA .NET\Projeto-AspNet\obj\Debug\net5.0\Razor\Views\Fornecedor\ListarFornecedor.cshtml.g.cs
+D:\Gaveta\Curso SINQIA .NET\Projeto-AspNet\obj\Debug\net5.0\Razor\Views\Login\Cadastro.cshtml.g.cs
+D:\Gaveta\Curso SINQIA .NET\Projeto-AspNet\obj\Debug\net5.0\Razor\Views\Menu\Menu.cshtml.g.cs
+D:\Gaveta\Curso SINQIA .NET\Projeto-AspNet\obj\Debug\net5.0\Razor\Views\Modelo\CadastrarModelo.cshtml.g.cs
+D:\Gaveta\Curso SINQIA .NET\Projeto-AspNet\obj\Debug\net5.0\Razor\Views\Modelo\ListarModelos.cshtml.g.cs
+D:\Gaveta\Curso SINQIA .NET\Projeto-AspNet\obj\Debug\net5.0\Razor\Views\Venda\CadastroVenda.cshtml.g.cs
+D:\Gaveta\Curso SINQIA .NET\Projeto-AspNet\obj\Debug\net5.0\Razor\Views\Venda\ListarVendas.cshtml.g.cs

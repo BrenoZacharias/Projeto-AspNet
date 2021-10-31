@@ -16,6 +16,9 @@ namespace Projeto_Loja_Sapatos.Data
         public DbSet<Fornecedor> Fornecedores { get; set; }
         public DbSet<Modelo> Modelos { get; set; }
         public DbSet<Venda> Vendas { get; set; }
+        public DbSet<Estoque> Estoques { get; set; }
+        public DbSet<Categoria> Categorias { get; set; }
+        public DbSet<Cliente> Clientes { get; set; }
 
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -33,32 +36,68 @@ namespace Projeto_Loja_Sapatos.Data
                 .HasMaxLength(14)
                 .IsRequired();
 
-            //modelBuilder.Entity<Fornecedor>()
-            //    .Property(p => p.Id);
+            modelBuilder.Entity<Modelo>()
+                .Property(p => p.id_fornecedor).IsRequired();
 
             modelBuilder.Entity<Modelo>()
-                .HasData(
-                    new Modelo { codigoRef="batatinha123", cor="Amarelo", id_fornecedor=1, nome="Round6",
-                    tamanho=42, id=1}
-                );
+                .Property(p => p.id_categoria).IsRequired();
 
-            modelBuilder.Entity<Fornecedor>()
-                .HasData(
-                    new Fornecedor
-                    {
-                        CNPJ = "00000000000100",
-                        Endereco = "Rua da Tia Cotinha, 230",
-                        Nome = "Netflix",
-                        Id = 1
-                    }, new Fornecedor
-                    {
-                        CNPJ = "11111111000111",
-                        Endereco = "Rua da Tio Manuel, 222",
-                        Nome = "Amazon Prime Video",
-                        Id = 2
-                    }
+            modelBuilder.Entity<Modelo>()
+                .Property(p => p.valor).IsRequired();
 
-                );
+            modelBuilder.Entity<Modelo>()
+                .Property(p => p.codigoRef)
+                .HasMaxLength(50).IsRequired();
+
+            modelBuilder.Entity<Modelo>()
+                .Property(p => p.cor)
+                .HasMaxLength(50);
+
+            modelBuilder.Entity<Modelo>()
+                .Property(p => p.tamanho);
+
+
+            modelBuilder.Entity<Estoque>()
+                .Property(p => p.Id_Modelo).IsRequired();
+
+            modelBuilder.Entity<Estoque>()
+                .Property(p => p.Qtd).IsRequired();
+
+
+            modelBuilder.Entity<Categoria>()
+                .Property(p => p.Nome)
+                .HasMaxLength(100).IsRequired();
+
+
+            modelBuilder.Entity<Cliente>()
+                .Property(p => p.Nome)
+                .HasMaxLength(300);
+
+            modelBuilder.Entity<Cliente>()
+                .Property(p => p.CPF)
+                .HasMaxLength(11).IsRequired();
+
+            modelBuilder.Entity<Cliente>()
+                .Property(p => p.Endereco)
+                .HasMaxLength(300).IsRequired();
+
+            modelBuilder.Entity<Cliente>()
+                .Property(p => p.Sexo)
+                .HasMaxLength(1);
+
+
+            modelBuilder.Entity<Venda>()
+                .Property(p => p.id_modelo).IsRequired();
+
+            modelBuilder.Entity<Venda>()
+                .Property(p => p.id_cliente).IsRequired();
+
+            modelBuilder.Entity<Venda>()
+                .Property(p => p.quantidade).IsRequired();
+
+            modelBuilder.Entity<Venda>()
+                .Property(p => p.dtVenda)
+                .IsRequired();
         }
     }
 }

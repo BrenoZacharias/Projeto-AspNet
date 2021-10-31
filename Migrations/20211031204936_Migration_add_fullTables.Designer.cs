@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Projeto_Loja_Sapatos.Data;
 
 namespace Projeto_Loja_Sapatos.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20211031204936_Migration_add_fullTables")]
+    partial class Migration_add_fullTables
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -81,8 +83,6 @@ namespace Projeto_Loja_Sapatos.Migrations
                         .HasColumnType("int");
 
                     b.HasKey("Id");
-
-                    b.HasIndex("Id_Modelo");
 
                     b.ToTable("Estoques");
                 });
@@ -167,17 +167,6 @@ namespace Projeto_Loja_Sapatos.Migrations
                     b.HasKey("id");
 
                     b.ToTable("Vendas");
-                });
-
-            modelBuilder.Entity("Projeto_Loja_Sapatos.Models.Estoque", b =>
-                {
-                    b.HasOne("Projeto_Loja_Sapatos.Models.Modelo", "Modelo")
-                        .WithMany()
-                        .HasForeignKey("Id_Modelo")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Modelo");
                 });
 #pragma warning restore 612, 618
         }

@@ -5803,11 +5803,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\breno.zacharias\\Projeto-AspNet\\Projeto_Loja_Sapatos.csproj",
+      "projectUniqueName": "C:\\Users\\breno.zacharias\\Desktop\\Primeiro modo\\Projeto-AspNet\\Projeto_Loja_Sapatos.csproj",
       "projectName": "Projeto_Loja_Sapatos",
-      "projectPath": "C:\\Users\\breno.zacharias\\Projeto-AspNet\\Projeto_Loja_Sapatos.csproj",
+      "projectPath": "C:\\Users\\breno.zacharias\\Desktop\\Primeiro modo\\Projeto-AspNet\\Projeto_Loja_Sapatos.csproj",
       "packagesPath": "C:\\Users\\breno.zacharias\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\breno.zacharias\\Projeto-AspNet\\obj\\",
+      "outputPath": "C:\\Users\\breno.zacharias\\Desktop\\Primeiro modo\\Projeto-AspNet\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\breno.zacharias\\AppData\\Roaming\\NuGet\\NuGet.Config",

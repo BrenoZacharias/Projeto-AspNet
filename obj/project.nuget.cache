@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "6k/Ii8a9q40hlEnkVYtgVf8KK1WmHLgNqNuC8+gkhpQi6G+n5mx0NNmYoL3eUhNP0jr7kPAT9Z1gyV4qJbH4rQ==",
+  "dgSpecHash": "EFu7npGA8Y/cKZwreiznl8Bwma+zy57mS8n1JCgQQr2ZDZXHrsFIasa2pCxc9CRkb3jwkMFozrQ0OCnrg8VWTA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\breno.zacharias\\Projeto-AspNet\\Projeto_Loja_Sapatos.csproj",
+  "projectFilePath": "C:\\Users\\breno.zacharias\\Desktop\\Primeiro modo\\Projeto-AspNet\\Projeto_Loja_Sapatos.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\breno.zacharias\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\breno.zacharias\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

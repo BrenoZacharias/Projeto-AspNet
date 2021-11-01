@@ -19,6 +19,9 @@
                 @Html.DisplayNameFor(model => model.nome_fornecedor)
             </th>
             <th>
+                @Html.DisplayNameFor(model => model.nome)
+            </th>
+            <th>
                 @Html.DisplayNameFor(model => model.id_categoria)
             </th>
             <th>
@@ -49,13 +52,13 @@
                 @Html.DisplayFor(modelItem => item.nome_fornecedor)
             </td>
             <td>
+                @Html.DisplayFor(modelItem => item.nome)
+            </td>
+            <td>
                 @Html.DisplayFor(modelItem => item.id_categoria)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.nome_categoria)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.nome)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.codigoRef)

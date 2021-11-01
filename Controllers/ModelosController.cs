@@ -73,7 +73,7 @@ namespace Projeto_Loja_Sapatos.Controllers
         public IActionResult Create()
         {
             ViewData["id_categoria"] = new SelectList(_context.Categorias, "Id", "Nome");
-            ViewData["id_fornecedor"] = new SelectList(_context.Fornecedores, "Id", "CNPJ");
+            ViewData["id_fornecedor"] = new SelectList(_context.Fornecedores, "Id", "Nome");
             return View();
         }
 

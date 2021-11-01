@@ -16,6 +16,7 @@ namespace Projeto_Loja_Sapatos.Models
         [ForeignKey("Categoria")]
         public int id_categoria { get; set;}
         public virtual Categoria Categoria { get; set; }
+        public string nome { get; set; }
         public string codigoRef { get; set; }
         public string cor { get; set; }
         public int tamanho { get; set; }

@@ -10,9 +10,12 @@ namespace Projeto_Loja_Sapatos.Models
         public int id { get; set; }
         public int id_fornecedor { get; set; }
         public string nome_fornecedor { get; set; }
-        public String nome { get; set; }
-        public String codigoRef { get; set; }
-        public String cor { get; set; }
+        public int id_categoria { get; set; }
+        public string nome_categoria { get; set; }
+        public string nome { get; set; }
+        public string codigoRef { get; set; }
+        public string cor { get; set; }
         public int tamanho { get; set; }
+        public double valor { get; set; }
     }
 }

@@ -134,6 +134,9 @@ namespace Projeto_Loja_Sapatos.Migrations
                     b.Property<int>("id_fornecedor")
                         .HasColumnType("int");
 
+                    b.Property<string>("nome")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<int>("tamanho")
                         .HasColumnType("int");
 

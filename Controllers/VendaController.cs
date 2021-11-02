@@ -22,14 +22,29 @@ namespace Projeto_Loja_Sapatos.Controllers
         // GET: Venda
         public async Task<IActionResult> Index()
         {
-            var Cliente = await _context.Clientes.ToListAsync();
-            var Vendas = await _context.Vendas.ToListAsync();
-            var Modelos = await _context.Modelos.ToListAsync();
-            List<VendaViewModel> VendaViewModel = new List<VendaViewModel>(); 
-            foreach
+            var vendas = await _context.Vendas.ToListAsync();
+            List<VendaViewModel> vendasViewModel = new List<VendaViewModel>();
+            foreach (var venda in vendas)
+            {
+                VendaViewModel vendaViewModel = new VendaViewModel();
+                vendaViewModel.id = venda.id;
+                var modelo = await _context.Modelos.FirstOrDefaultAsync
+                    (m => m.id == venda.id_modelo);
+                vendaViewModel.dtVenda = DateTime.Now;
+                vendaViewModel.codigoRef = modelo.codigoRef;
+                var cliente = await _context.Clientes.FirstOrDefaultAsync
+                    (m => m.Id == venda.id_cliente);
+                vendaViewModel.CPF = cliente.CPF;
+                vendaViewModel.quantidade = venda.quantidade;
+                vendaViewModel.total = CalculaTotal(venda.quantidade, modelo.valor);
+                vendasViewModel.Add(vendaViewModel);
+            }
+            return View(vendasViewModel);
+        }
 
-            var appDbContext = _context.Vendas.Include(v => v.Cliente).Include(v => v.Modelo);
-            return View(await appDbContext.ToListAsync());
+        private double CalculaTotal(int quantidade, double valor)
+        {
+            return quantidade * valor;
         }
 
         // GET: Venda/Details/5
@@ -73,8 +88,9 @@ namespace Projeto_Loja_Sapatos.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["id_cliente"] = new SelectList(_context.Clientes, "Id", "CPF", venda.id_cliente);
-            ViewData["id_modelo"] = new SelectList(_context.Modelos, "id", "codigoRef", venda.id_modelo);
+            ViewData["id_cliente"] = new SelectList(_context.Clientes, "Id", "CPF");
+            ViewData["id_modelo"] = new SelectList(_context.Modelos, "id", "codigoRef");
+
             return View(venda);
         }
 

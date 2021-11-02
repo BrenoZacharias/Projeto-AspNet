@@ -503,3 +503,18 @@ D:\Gaveta\Curso SINQIA .NET\Projeto-AspNet\obj\Debug\net5.0\Razor\Views\Cliente\
 D:\Gaveta\Curso SINQIA .NET\Projeto-AspNet\obj\Debug\net5.0\Razor\Views\Cliente\Details.cshtml.g.cs
 D:\Gaveta\Curso SINQIA .NET\Projeto-AspNet\obj\Debug\net5.0\Razor\Views\Cliente\Edit.cshtml.g.cs
 D:\Gaveta\Curso SINQIA .NET\Projeto-AspNet\obj\Debug\net5.0\Razor\Views\Cliente\Index.cshtml.g.cs
+C:\Users\breno.zacharias\Desktop\Primeiro modo\Projeto-AspNet\obj\Debug\net5.0\Razor\Views\Cliente\Create.cshtml.g.cs
+C:\Users\breno.zacharias\Desktop\Primeiro modo\Projeto-AspNet\obj\Debug\net5.0\Razor\Views\Cliente\Delete.cshtml.g.cs
+C:\Users\breno.zacharias\Desktop\Primeiro modo\Projeto-AspNet\obj\Debug\net5.0\Razor\Views\Cliente\Details.cshtml.g.cs
+C:\Users\breno.zacharias\Desktop\Primeiro modo\Projeto-AspNet\obj\Debug\net5.0\Razor\Views\Cliente\Edit.cshtml.g.cs
+C:\Users\breno.zacharias\Desktop\Primeiro modo\Projeto-AspNet\obj\Debug\net5.0\Razor\Views\Cliente\Index.cshtml.g.cs
+C:\Users\breno.zacharias\Desktop\Primeiro modo\Projeto-AspNet\obj\Debug\net5.0\Razor\Views\Estoque\Create.cshtml.g.cs
+C:\Users\breno.zacharias\Desktop\Primeiro modo\Projeto-AspNet\obj\Debug\net5.0\Razor\Views\Estoque\Delete.cshtml.g.cs
+C:\Users\breno.zacharias\Desktop\Primeiro modo\Projeto-AspNet\obj\Debug\net5.0\Razor\Views\Estoque\Details.cshtml.g.cs
+C:\Users\breno.zacharias\Desktop\Primeiro modo\Projeto-AspNet\obj\Debug\net5.0\Razor\Views\Estoque\Edit.cshtml.g.cs
+C:\Users\breno.zacharias\Desktop\Primeiro modo\Projeto-AspNet\obj\Debug\net5.0\Razor\Views\Estoque\Index.cshtml.g.cs
+C:\Users\breno.zacharias\Desktop\Primeiro modo\Projeto-AspNet\obj\Debug\net5.0\Razor\Views\Venda\Create.cshtml.g.cs
+C:\Users\breno.zacharias\Desktop\Primeiro modo\Projeto-AspNet\obj\Debug\net5.0\Razor\Views\Venda\Delete.cshtml.g.cs
+C:\Users\breno.zacharias\Desktop\Primeiro modo\Projeto-AspNet\obj\Debug\net5.0\Razor\Views\Venda\Details.cshtml.g.cs
+C:\Users\breno.zacharias\Desktop\Primeiro modo\Projeto-AspNet\obj\Debug\net5.0\Razor\Views\Venda\Edit.cshtml.g.cs
+C:\Users\breno.zacharias\Desktop\Primeiro modo\Projeto-AspNet\obj\Debug\net5.0\Razor\Views\Venda\Index.cshtml.g.cs

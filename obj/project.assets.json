@@ -7150,19 +7150,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Jean\\.nuget\\packages\\": {}
+    "C:\\Users\\breno.zacharias\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Gaveta\\Curso SINQIA .NET\\Projeto-AspNet\\Projeto_Loja_Sapatos.csproj",
+      "projectUniqueName": "C:\\Users\\breno.zacharias\\Desktop\\Primeiro modo\\Projeto-AspNet\\Projeto_Loja_Sapatos.csproj",
       "projectName": "Projeto_Loja_Sapatos",
-      "projectPath": "D:\\Gaveta\\Curso SINQIA .NET\\Projeto-AspNet\\Projeto_Loja_Sapatos.csproj",
-      "packagesPath": "C:\\Users\\Jean\\.nuget\\packages\\",
-      "outputPath": "D:\\Gaveta\\Curso SINQIA .NET\\Projeto-AspNet\\obj\\",
+      "projectPath": "C:\\Users\\breno.zacharias\\Desktop\\Primeiro modo\\Projeto-AspNet\\Projeto_Loja_Sapatos.csproj",
+      "packagesPath": "C:\\Users\\breno.zacharias\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\breno.zacharias\\Desktop\\Primeiro modo\\Projeto-AspNet\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Jean\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\breno.zacharias\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -7231,7 +7231,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "c:\\program files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
       }
     }
   }

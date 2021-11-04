@@ -10,8 +10,8 @@ using Projeto_Loja_Sapatos.Data;
 namespace Projeto_Loja_Sapatos.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20211101015825_Migration_Revisão")]
-    partial class Migration_Revisão
+    [Migration("20211103203426_Migration_Initial")]
+    partial class Migration_Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -137,7 +137,9 @@ namespace Projeto_Loja_Sapatos.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("nome")
-                        .HasColumnType("nvarchar(max)");
+                        .IsRequired()
+                        .HasMaxLength(255)
+                        .HasColumnType("nvarchar(255)");
 
                     b.Property<int>("tamanho")
                         .HasColumnType("int");

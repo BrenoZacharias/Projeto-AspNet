@@ -135,7 +135,9 @@ namespace Projeto_Loja_Sapatos.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("nome")
-                        .HasColumnType("nvarchar(max)");
+                        .IsRequired()
+                        .HasMaxLength(255)
+                        .HasColumnType("nvarchar(255)");
 
                     b.Property<int>("tamanho")
                         .HasColumnType("int");

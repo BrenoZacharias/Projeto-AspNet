@@ -43,6 +43,9 @@ namespace Projeto_Loja_Sapatos.Data
                 .Property(p => p.id_categoria).IsRequired();
 
             modelBuilder.Entity<Modelo>()
+                .Property(p => p.nome).IsRequired().HasMaxLength(255);
+
+            modelBuilder.Entity<Modelo>()
                 .Property(p => p.valor).IsRequired();
 
             modelBuilder.Entity<Modelo>()

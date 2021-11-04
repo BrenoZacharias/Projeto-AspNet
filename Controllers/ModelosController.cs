@@ -23,15 +23,11 @@ namespace Projeto_Loja_Sapatos.Controllers
         public async Task<IActionResult> Index()
         {
             var modelos = await _context.Modelos.ToListAsync();
-            var fornecedores = await _context.Fornecedores.ToListAsync();
-            var categorias = await _context.Categorias.ToListAsync();
             List<ModeloViewModel> modelosViewModels = new List<ModeloViewModel>();
             foreach (var modelo in modelos)
             {
                 ModeloViewModel modeloViewModel = new ModeloViewModel();
                 modeloViewModel.id = modelo.id;
-                modeloViewModel.id_fornecedor = modelo.id_fornecedor;
-                modeloViewModel.id_categoria = modelo.id_categoria;
                 modeloViewModel.nome = modelo.nome;
                 modeloViewModel.codigoRef = modelo.codigoRef;
                 modeloViewModel.cor = modelo.cor;
@@ -39,6 +35,10 @@ namespace Projeto_Loja_Sapatos.Controllers
                 modeloViewModel.valor = modelo.valor;
                 var fornecedor = await _context.Fornecedores
                .FirstOrDefaultAsync(m => m.Id == modelo.id_fornecedor);
+                var estoque = await _context.Estoques
+               .FirstOrDefaultAsync(e => e.Id_Modelo == modelo.id);
+                modeloViewModel.quantidade = estoque.Qtd;
+                modeloViewModel.cnpj_fornecedor = fornecedor.CNPJ;
                 modeloViewModel.nome_fornecedor = fornecedor.Nome;
                 var categoria = await _context.Categorias
                .FirstOrDefaultAsync(m => m.Id == modelo.id_categoria);
@@ -73,7 +73,7 @@ namespace Projeto_Loja_Sapatos.Controllers
         public IActionResult Create()
         {
             ViewData["id_categoria"] = new SelectList(_context.Categorias, "Id", "Nome");
-            ViewData["id_fornecedor"] = new SelectList(_context.Fornecedores, "Id", "Nome");
+            ViewData["id_fornecedor"] = new SelectList(_context.Fornecedores, "Id", "CNPJ");
             return View();
         }
 
@@ -82,7 +82,7 @@ namespace Projeto_Loja_Sapatos.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("id,id_fornecedor,id_categoria,codigoRef,cor,tamanho,valor")] Modelo modelo)
+        public async Task<IActionResult> Create([Bind("id,id_fornecedor,id_categoria,nome,codigoRef,cor,tamanho,valor")] Modelo modelo)
         {
             if (ModelState.IsValid)
             {
@@ -118,7 +118,7 @@ namespace Projeto_Loja_Sapatos.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("id,id_fornecedor,id_categoria,codigoRef,cor,tamanho,valor")] Modelo modelo)
+        public async Task<IActionResult> Edit(int id, [Bind("id,id_fornecedor,id_categoria,nome,codigoRef,cor,tamanho,valor")] Modelo modelo)
         {
             if (id != modelo.id)
             {

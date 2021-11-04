@@ -282,9 +282,6 @@ C:\Users\breno.zacharias\Desktop\Primeiro modo\Projeto-AspNet\obj\Debug\net5.0\P
 C:\Users\breno.zacharias\Desktop\Primeiro modo\Projeto-AspNet\obj\Debug\net5.0\Razor\Views\Fornecedor\CadastrarFornecedor.cshtml.g.cs
 C:\Users\breno.zacharias\Desktop\Primeiro modo\Projeto-AspNet\obj\Debug\net5.0\Razor\Views\Fornecedor\ListarFornecedor.cshtml.g.cs
 C:\Users\breno.zacharias\Desktop\Primeiro modo\Projeto-AspNet\obj\Debug\net5.0\Razor\Views\Home\Index.cshtml.g.cs
-C:\Users\breno.zacharias\Desktop\Primeiro modo\Projeto-AspNet\obj\Debug\net5.0\Razor\Views\Home\Privacy.cshtml.g.cs
-C:\Users\breno.zacharias\Desktop\Primeiro modo\Projeto-AspNet\obj\Debug\net5.0\Razor\Views\Login\Cadastro.cshtml.g.cs
-C:\Users\breno.zacharias\Desktop\Primeiro modo\Projeto-AspNet\obj\Debug\net5.0\Razor\Views\Menu\Menu.cshtml.g.cs
 C:\Users\breno.zacharias\Desktop\Primeiro modo\Projeto-AspNet\obj\Debug\net5.0\Razor\Views\Modelo\CadastrarModelo.cshtml.g.cs
 C:\Users\breno.zacharias\Desktop\Primeiro modo\Projeto-AspNet\obj\Debug\net5.0\Razor\Views\Modelo\ListarModelos.cshtml.g.cs
 C:\Users\breno.zacharias\Desktop\Primeiro modo\Projeto-AspNet\obj\Debug\net5.0\Razor\Views\Shared\Error.cshtml.g.cs
@@ -518,3 +515,4 @@ C:\Users\breno.zacharias\Desktop\Primeiro modo\Projeto-AspNet\obj\Debug\net5.0\R
 C:\Users\breno.zacharias\Desktop\Primeiro modo\Projeto-AspNet\obj\Debug\net5.0\Razor\Views\Venda\Details.cshtml.g.cs
 C:\Users\breno.zacharias\Desktop\Primeiro modo\Projeto-AspNet\obj\Debug\net5.0\Razor\Views\Venda\Edit.cshtml.g.cs
 C:\Users\breno.zacharias\Desktop\Primeiro modo\Projeto-AspNet\obj\Debug\net5.0\Razor\Views\Venda\Index.cshtml.g.cs
+C:\Users\breno.zacharias\Desktop\Primeiro modo\Projeto-AspNet\obj\Debug\net5.0\Razor\Views\Login\Index.cshtml.g.cs

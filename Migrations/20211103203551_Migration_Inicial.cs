@@ -2,7 +2,7 @@
 
 namespace Projeto_Loja_Sapatos.Migrations
 {
-    public partial class Migration_Revisão : Migration
+    public partial class Migration_Inicial : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {

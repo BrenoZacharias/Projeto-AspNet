@@ -22,8 +22,19 @@ namespace Projeto_Loja_Sapatos.Controllers
         // GET: Estoque
         public async Task<IActionResult> Index()
         {
-            var appDbContext = _context.Estoques.Include(e => e.Modelo);
-            return View(await appDbContext.ToListAsync());
+            var estoques = await _context.Estoques.ToListAsync();
+            List<EstoqueViewModel> estoquesViewModels = new List<EstoqueViewModel>();
+            foreach (var estoque in estoques)
+            {
+                EstoqueViewModel estoqueViewModel = new EstoqueViewModel();
+                estoqueViewModel.Id = estoque.Id;
+                estoqueViewModel.Qtd = estoque.Qtd;
+                var modelo = await _context.Modelos.FirstOrDefaultAsync(m => m.id == estoque.Id_Modelo);
+                estoqueViewModel.Nome_Modelo = modelo.nome;
+                estoquesViewModels.Add(estoqueViewModel);
+            }
+
+            return View(estoquesViewModels);
         }
 
         // GET: Estoque/Details/5
@@ -48,7 +59,7 @@ namespace Projeto_Loja_Sapatos.Controllers
         // GET: Estoque/Create
         public IActionResult Create()
         {
-            ViewData["Id_Modelo"] = new SelectList(_context.Modelos, "id", "codigoRef");
+            ViewData["Id_Modelo"] = new SelectList(_context.Modelos, "id", "nome");
             return View();
         }
 

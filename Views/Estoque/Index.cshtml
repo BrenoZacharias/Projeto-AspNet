@@ -1,4 +1,4 @@
-﻿@model IEnumerable<Projeto_Loja_Sapatos.Models.Estoque>
+﻿@model IEnumerable<Projeto_Loja_Sapatos.Models.EstoqueViewModel>
 
 @{
     ViewData["Title"] = "Index";
@@ -13,10 +13,10 @@
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.Modelo)
+                Nome do Modelo
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Qtd)
+                Quantidade
             </th>
             <th></th>
         </tr>
@@ -25,7 +25,7 @@
 @foreach (var item in Model) {
         <tr>
             <td>
-                @Html.DisplayFor(modelItem => item.Modelo.codigoRef)
+                @Html.DisplayFor(modelItem => item.Nome_Modelo)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Qtd)

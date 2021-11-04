@@ -10,8 +10,8 @@ using Projeto_Loja_Sapatos.Data;
 namespace Projeto_Loja_Sapatos.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20211031210422_Migration_add_ForeignKeyInEstoque")]
-    partial class Migration_add_ForeignKeyInEstoque
+    [Migration("20211103203551_Migration_Inicial")]
+    partial class Migration_Inicial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -136,6 +136,11 @@ namespace Projeto_Loja_Sapatos.Migrations
                     b.Property<int>("id_fornecedor")
                         .HasColumnType("int");
 
+                    b.Property<string>("nome")
+                        .IsRequired()
+                        .HasMaxLength(255)
+                        .HasColumnType("nvarchar(255)");
+
                     b.Property<int>("tamanho")
                         .HasColumnType("int");
 
@@ -143,6 +148,10 @@ namespace Projeto_Loja_Sapatos.Migrations
                         .HasColumnType("float");
 
                     b.HasKey("id");
+
+                    b.HasIndex("id_categoria");
+
+                    b.HasIndex("id_fornecedor");
 
                     b.ToTable("Modelos");
                 });
@@ -168,6 +177,10 @@ namespace Projeto_Loja_Sapatos.Migrations
 
                     b.HasKey("id");
 
+                    b.HasIndex("id_cliente");
+
+                    b.HasIndex("id_modelo");
+
                     b.ToTable("Vendas");
                 });
 
@@ -178,6 +191,44 @@ namespace Projeto_Loja_Sapatos.Migrations
                         .HasForeignKey("Id_Modelo")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+
+                    b.Navigation("Modelo");
+                });
+
+            modelBuilder.Entity("Projeto_Loja_Sapatos.Models.Modelo", b =>
+                {
+                    b.HasOne("Projeto_Loja_Sapatos.Models.Categoria", "Categoria")
+                        .WithMany()
+                        .HasForeignKey("id_categoria")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Projeto_Loja_Sapatos.Models.Fornecedor", "Fornecedor")
+                        .WithMany()
+                        .HasForeignKey("id_fornecedor")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Categoria");
+
+                    b.Navigation("Fornecedor");
+                });
+
+            modelBuilder.Entity("Projeto_Loja_Sapatos.Models.Venda", b =>
+                {
+                    b.HasOne("Projeto_Loja_Sapatos.Models.Cliente", "Cliente")
+                        .WithMany()
+                        .HasForeignKey("id_cliente")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Projeto_Loja_Sapatos.Models.Modelo", "Modelo")
+                        .WithMany()
+                        .HasForeignKey("id_modelo")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Cliente");
 
                     b.Navigation("Modelo");
                 });

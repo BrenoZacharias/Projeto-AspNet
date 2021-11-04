@@ -37,12 +37,22 @@ namespace Projeto_Loja_Sapatos.Controllers
                .FirstOrDefaultAsync(m => m.Id == modelo.id_fornecedor);
                 var estoque = await _context.Estoques
                .FirstOrDefaultAsync(e => e.Id_Modelo == modelo.id);
-                modeloViewModel.quantidade = estoque.Qtd;
+                try
+                {
+                    modeloViewModel.quantidade = estoque.Qtd;
+                    //desmarcar o "interromper para esse tipo de excessão" se tiver ativo
+                }
+                catch (NullReferenceException)
+                {
+                    
+                    modeloViewModel.quantidade = 0;
+                }
                 modeloViewModel.cnpj_fornecedor = fornecedor.CNPJ;
                 modeloViewModel.nome_fornecedor = fornecedor.Nome;
                 var categoria = await _context.Categorias
                .FirstOrDefaultAsync(m => m.Id == modelo.id_categoria);
                 modeloViewModel.nome_categoria = categoria.Nome;
+
                 modelosViewModels.Add(modeloViewModel);
             }
             
